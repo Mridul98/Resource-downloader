@@ -17,10 +17,10 @@ for links in resultset:
         res = res.replace('manjunath5496','Mridul98')
         print(res)
         dl = requests.get(res)
-        print(dl.headers)
-        # file = 'paper'+str(counter)+'.pdf'
-        # open(file,'wb').write(dl.content)
+        #print(dl.headers)
+        file = 'paper'+str(counter)+'.pdf'
+        open(file,'wb').write(dl.content)
         
         
-        # counter = counter+1
+        counter = counter+1
         
